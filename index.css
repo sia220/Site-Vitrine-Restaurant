@@ -1,0 +1,98 @@
+@import "normalize.css";
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("fonts/PlayfairDisplay-Black.otf");
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("fonts/PlayfairDisplay-Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("fonts/PlayfairDisplay-Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins";
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: "PlayfairDisplay";
+}
+
+/* Header*/
+.header {
+    background-color: #1f1d21;
+}
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.header__nav li a {
+    color: white;
+    padding: 15px;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-style: normal;
+}
+.btn-reserver {
+    display: flex;
+}
+.btn-reserver__img {
+    padding-left: 10px;
+}
+@media only screen and (max-width: 500px) {
+    .header {
+        min-height: 70px;
+    }
+    .header__nav {
+        display: none;
+    }
+}
