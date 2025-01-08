@@ -73,6 +73,7 @@ h4 {
     justify-content: center;
     align-items: center;
     padding: 0;
+    margin: 0;
 }
 
 .header__nav li a {
@@ -95,4 +96,56 @@ h4 {
     .header__nav {
         display: none;
     }
+}
+/*Section à propos */
+.apropos {
+    background-color: #1f1d21;
+    padding: 70px 0;
+}
+.apropos__container {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.apropos-txt {
+    width: 45%;
+    color: white;
+}
+.apropos-img {
+    width: 45%;
+    object-fit: contain;
+}
+.apropos-txt__h1 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.apropos-txt__desc {
+    font-size: 13px;
+    font-weight: 300;
+}
+.apropos-txt__btn {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    color: #1f1d21;
+    background-color: #ffb557;
+    padding: 15px;
+    width: 170px;
+    justify-content: space-between;
+    font-weight: 500;
+    margin: 40px 0;
+}
+.apropos-txt__h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+.apropos-txt__p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 0;
 }
