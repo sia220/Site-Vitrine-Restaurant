@@ -1,36 +1,60 @@
 @import "normalize.css";
-
+/*Police Poppins*/
 @font-face {
     font-family: "Poppins";
-    src: url("fonts/Poppins-Light.ttf");
+    src: url("fonts/Poppins-Thin.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-ExtraLight.otf");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Light.otf");
     font-style: normal;
     font-weight: 300;
 }
 @font-face {
     font-family: "Poppins";
-    src: url("fonts/Poppins-Regular.ttf");
+    src: url("fonts/Poppins-Regular.otf");
     font-style: normal;
     font-weight: 400;
 }
 @font-face {
     font-family: "Poppins";
-    src: url("fonts/Poppins-Medium.ttf");
+    src: url("fonts/Poppins-Medium.otf");
     font-style: normal;
     font-weight: 500;
 }
 @font-face {
     font-family: "Poppins";
-    src: url("fonts/Poppins-SemiBold.ttf");
+    src: url("fonts/Poppins-SemiBold.otf");
     font-style: normal;
     font-weight: 600;
 }
 @font-face {
     font-family: "Poppins";
-    src: url("fonts/Poppins-Bold.ttf");
+    src: url("fonts/Poppins-Bold.otf");
     font-style: normal;
     font-weight: 700;
 }
-
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-ExtraBold.otf");
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Black.otf");
+    font-style: normal;
+    font-weight: 900;
+}
+/*Police Playfair Display*/
 @font-face {
     font-family: "PlayfairDisplay";
     src: url("fonts/PlayfairDisplay-Black.otf");
@@ -97,7 +121,7 @@ h4 {
         display: none;
     }
 }
-/*Section à propos */
+/*Section A propos */
 .apropos {
     background-color: #1f1d21;
     padding: 70px 0;
@@ -105,7 +129,7 @@ h4 {
 .apropos__container {
     display: flex;
     margin: auto;
-    width: 70%;
+    width: 85%;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -115,10 +139,12 @@ h4 {
 }
 .apropos-img {
     width: 45%;
-    object-fit: contain;
+    object-fit: cover;
+    height: 350px;
+    object-position: center;
 }
 .apropos-txt__h1 {
-    font-size: 35px;
+    font-size: 32.5px;
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: 700;
@@ -127,12 +153,12 @@ h4 {
     font-size: 13px;
     font-weight: 300;
 }
-.apropos-txt__btn {
+.btn-menu {
     font-size: 13px;
     display: flex;
     align-items: center;
     color: #1f1d21;
-    background-color: #ffb557;
+    background-color: #ffb577;
     padding: 15px;
     width: 170px;
     justify-content: space-between;
@@ -148,4 +174,126 @@ h4 {
     font-size: 13px;
     font-weight: 300;
     margin-top: 0;
+}
+
+/* Section En savoir plus*/
+.ensavoirplus {
+    background-color: #1f1d21;
+    padding: 70px 0;
+}
+.ensavoirplus__container {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    justify-content: space-between;
+}
+.ensavoirplus-txt {
+    color: white;
+    width: 45%;
+}
+.ensavoirplus-txt__first {
+    color: #ffb577;
+    font-weight: 100;
+    font-size: 14px;
+}
+.ensavoirplus-txt__first span {
+    color: white;
+}
+.ensavoirplus-txt__h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+.ensavoirplus-txt__desc {
+    font-size: 13px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    color: #c4e4ea;
+}
+.chiffres {
+    display: flex;
+    justify-content: space-between;
+}
+.chiffres__item {
+    width: 28%;
+}
+.chiffres__item__top {
+    height: 60px;
+    margin-bottom: 40px;
+}
+.chiffres-titre {
+    display: flex;
+}
+.chiffres-titre img {
+    padding-right: 10px;
+    padding-bottom: 5px;
+    width: 22px;
+}
+.chiffres-titre h3 {
+    margin: 0;
+    font-family: Poppins;
+    font-weight: 400;
+    color: #c4e4ea;
+    word-break: break-all;
+}
+.plus {
+    margin-top: 0;
+    font-weight: 200;
+    font-size: 14px;
+}
+.chiffres__item__bottom {
+    color: #c4e4ea;
+    font-weight: 200;
+    font-size: 14px;
+}
+.ensavoirplus-img {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.ensavoirplus-img__1 {
+    object-fit: cover;
+    width: 45%;
+    padding-top: 180px;
+    height: 580px;
+}
+.ensavoirplus-img__2 {
+    object-fit: cover;
+    width: 45%;
+    height: 490px;
+    padding-top: 90px;
+}
+@media only screen and (max-width: 800px) {
+    .ensavoirplus__container {
+        flex-direction: column;
+    }
+    .ensavoirplus-txt {
+        width: 100%;
+    }
+    .chiffres__item {
+        width: 30%;
+    }
+    .chiffres-titre {
+        flex-direction: column;
+    }
+    .chiffres-titre h3 {
+        font-size: 16px;
+    }
+    .plus {
+        font-size: 12px;
+    }
+    .chiffres__item__bottom {
+        font-size: 12px;
+        margin-top: 60px;
+    }
+    .ensavoirplus-img {
+        width: 100%;
+    }
+    .ensavoirplus-img__1 {
+        padding-top: 90px;
+    }
+    .ensavoirplus-img__2 {
+        padding-top: 0px;
+    }
 }
