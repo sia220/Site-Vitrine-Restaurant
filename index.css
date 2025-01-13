@@ -351,7 +351,7 @@ h4 {
 /* Section Carte */
 .carte {
     background-color: #1f1d21;
-    padding: 35px 0;
+    padding: 35px 0 70px 0;
 }
 .carte__container {
     width: 85%;
@@ -406,5 +406,40 @@ h4 {
 @media only screen and (max-width: 500px) {
     .carte__menu__item {
         width: 49%;
+    }
+}
+/* Section avis */
+.avis {
+    background-color: #19161b;
+    padding: 35px 0;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.avis__txt {
+    width: 30%;
+    color: #b8b8b8;
+}
+.avis__img {
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+}
+@media only screen and (max-width: 500px) {
+    .avis {
+        flex-direction: column;
+    }
+    .avis__txt {
+        width: 85%;
+        margin: auto;
+    }
+    .avis__txt p {
+        width: 75%;
+    }
+    .avis__img {
+        margin-top: 60px;
+        width: 100%;
+        height: 200px;
     }
 }
