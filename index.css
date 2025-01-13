@@ -350,7 +350,7 @@ h4 {
 }
 /* Section Carte */
 .carte {
-    background-color: #1f1d21;
+    background-color: #19161b;
     padding: 35px 0 70px 0;
 }
 .carte__container {
@@ -410,7 +410,7 @@ h4 {
 }
 /* Section avis */
 .avis {
-    background-color: #19161b;
+    background-color: #1f1d21;
     padding: 35px 0;
     display: flex;
     margin: auto;
@@ -441,5 +441,55 @@ h4 {
         margin-top: 60px;
         width: 100%;
         height: 200px;
+    }
+}
+/* Section Blog */
+.blog {
+    background-color: #19161b;
+    padding: 35px 0;
+}
+.blog__container {
+    width: 85%;
+    margin: auto;
+}
+.blog__container .section-titre {
+    width: 25%;
+}
+.articles {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.article {
+    background-color: #1f1d21;
+    color: white;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article__txt {
+    padding: 15px;
+    font-weight: 100;
+}
+.article__txt__date {
+    margin-top: 0;
+    font-size: 12px;
+}
+.article__txt__apercu {
+    font-size: 13px;
+}
+.article img {
+    width: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 500px) {
+    .blog__container .section-titre {
+        width: 50%;
+    }
+    .article {
+        width: 47%;
+        margin-bottom: 35px;
     }
 }
