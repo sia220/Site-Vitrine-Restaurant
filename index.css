@@ -196,13 +196,14 @@ h4 {
     font-weight: 100;
     font-size: 14px;
     margin-top: 0;
+    font-family: "PlayfairDisplay";
 }
 .section-intro span {
     color: white;
 }
 .section-titre {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
 }
 .ensavoirplus-txt__desc {
@@ -315,16 +316,14 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     background-color: #19161b;
-    padding: 75px 0px 75px 75px;
+    padding: 75px;
     color: white;
+    justify-content: space-between;
+    margin: auto;
 }
 .offres-item {
-    width: 33%;
-    padding-right: 75px;
-}
-
-.offres-item:first-child {
-    padding-bottom: 75px;
+    width: 32%;
+    margin-bottom: 35px;
 }
 .offres-item h3 {
     font-weight: 500;
@@ -333,18 +332,79 @@ h4 {
 .offres-item p {
     font-weight: 100;
     font-size: 14px;
+    width: 70%;
 }
 @media only screen and (max-width: 500px) {
     .offres-item {
-        width: 50%;
+        width: 49%;
     }
     .offres-item p {
         font-size: 12px;
     }
     .offres-boite {
-        padding: 30px 0px 30px 30px;
+        padding: 40px;
     }
-    .offres-item:nth-child(3) {
-        padding-bottom: 75px;
+    .offres-item p {
+        width: 90%;
+    }
+}
+/* Section Carte */
+.carte {
+    background-color: #1f1d21;
+    padding: 35px 0;
+}
+.carte__container {
+    width: 85%;
+    margin: auto;
+}
+.carte__txt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.carte__txt__left {
+    width: 45%;
+}
+.carte__txt__right {
+    width: 45%;
+    color: #b8b8b8;
+    font-weight: 300;
+}
+.carte__txt__left p {
+    font-size: 14px;
+    color: #c4e4ea;
+    font-weight: 200;
+    font-family: "PlayfairDisplay";
+    margin-top: 0;
+}
+.carte__menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.carte__menu__item {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+.carte__menu__item img {
+    width: 100%;
+}
+.carte__menu__item h3 {
+    background-color: #19161b;
+    color: white;
+    font-weight: 200;
+    margin-top: 0;
+    padding: 10px;
+    width: auto;
+    font-size: 14px;
+}
+.carte__container .btn-menu {
+    margin: auto;
+}
+@media only screen and (max-width: 500px) {
+    .carte__menu__item {
+        width: 49%;
     }
 }
