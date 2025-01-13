@@ -124,7 +124,7 @@ h4 {
 /*Section A propos */
 .apropos {
     background-color: #1f1d21;
-    padding: 70px 0;
+    padding: 35px 0;
 }
 .apropos__container {
     display: flex;
@@ -179,7 +179,7 @@ h4 {
 /* Section En savoir plus*/
 .ensavoirplus {
     background-color: #1f1d21;
-    padding: 70px 0;
+    padding: 35px 0;
 }
 .ensavoirplus__container {
     display: flex;
@@ -191,17 +191,19 @@ h4 {
     color: white;
     width: 45%;
 }
-.ensavoirplus-txt__first {
+.section-intro {
     color: #ffb577;
     font-weight: 100;
     font-size: 14px;
+    margin-top: 0;
 }
-.ensavoirplus-txt__first span {
+.section-intro span {
     color: white;
 }
-.ensavoirplus-txt__h2 {
+.section-titre {
     font-weight: 500;
     font-size: 30px;
+    color: white;
 }
 .ensavoirplus-txt__desc {
     font-size: 13px;
@@ -295,5 +297,54 @@ h4 {
     }
     .ensavoirplus-img__2 {
         padding-top: 0px;
+    }
+}
+/* Section offres */
+.offres {
+    background-color: #1f1d21;
+    padding: 35px 0;
+}
+.offres__container {
+    width: 85%;
+    margin: auto;
+}
+.offres__container .section-titre {
+    width: 45%;
+}
+.offres-boite {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #19161b;
+    padding: 75px 0px 75px 75px;
+    color: white;
+}
+.offres-item {
+    width: 33%;
+    padding-right: 75px;
+}
+
+.offres-item:first-child {
+    padding-bottom: 75px;
+}
+.offres-item h3 {
+    font-weight: 500;
+    font-size: 23px;
+}
+.offres-item p {
+    font-weight: 100;
+    font-size: 14px;
+}
+@media only screen and (max-width: 500px) {
+    .offres-item {
+        width: 50%;
+    }
+    .offres-item p {
+        font-size: 12px;
+    }
+    .offres-boite {
+        padding: 30px 0px 30px 30px;
+    }
+    .offres-item:nth-child(3) {
+        padding-bottom: 75px;
     }
 }
