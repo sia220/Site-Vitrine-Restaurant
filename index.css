@@ -89,7 +89,7 @@ h4 {
 
 /* Header*/
 .header {
-    background-color: #1f1d21;
+    background-color: #19161b;
 }
 .header__nav {
     display: flex;
@@ -123,7 +123,7 @@ h4 {
 }
 /*Section A propos */
 .apropos {
-    background-color: #1f1d21;
+    background-color: #19161b;
     padding: 35px 0;
 }
 .apropos__container {
@@ -137,6 +137,10 @@ h4 {
     width: 45%;
     color: white;
 }
+.apropos-txt p {
+    color: #b8b8b8;
+}
+
 .apropos-img {
     width: 45%;
     object-fit: cover;
@@ -178,7 +182,7 @@ h4 {
 
 /* Section En savoir plus*/
 .ensavoirplus {
-    background-color: #1f1d21;
+    background-color: #19161b;
     padding: 35px 0;
 }
 .ensavoirplus__container {
@@ -208,9 +212,9 @@ h4 {
 }
 .ensavoirplus-txt__desc {
     font-size: 13px;
-    font-weight: 200;
+    font-weight: 300;
     margin-bottom: 40px;
-    color: #c4e4ea;
+    color: #b8b8b8;
 }
 .chiffres {
     display: flex;
@@ -244,8 +248,8 @@ h4 {
     font-size: 14px;
 }
 .chiffres__item__bottom {
-    color: #c4e4ea;
-    font-weight: 200;
+    color: #b8b8b8;
+    font-weight: 300;
     font-size: 14px;
 }
 .ensavoirplus-img {
@@ -285,6 +289,8 @@ h4 {
     }
     .plus {
         font-size: 12px;
+        color: #b8b8b8;
+        font-weight: 300;
     }
     .chiffres__item__bottom {
         font-size: 12px;
@@ -302,7 +308,7 @@ h4 {
 }
 /* Section offres */
 .offres {
-    background-color: #1f1d21;
+    background-color: #19161b;
     padding: 35px 0;
 }
 .offres__container {
@@ -315,7 +321,7 @@ h4 {
 .offres-boite {
     display: flex;
     flex-wrap: wrap;
-    background-color: #19161b;
+    background-color: #151217;
     padding: 75px;
     color: white;
     justify-content: space-between;
@@ -330,9 +336,10 @@ h4 {
     font-size: 23px;
 }
 .offres-item p {
-    font-weight: 100;
+    font-weight: 200;
     font-size: 14px;
     width: 70%;
+    color: #b8b8b8;
 }
 @media only screen and (max-width: 500px) {
     .offres-item {
@@ -392,7 +399,7 @@ h4 {
     width: 100%;
 }
 .carte__menu__item h3 {
-    background-color: #19161b;
+    background-color: #1f1d21;
     color: white;
     font-weight: 200;
     margin-top: 0;
@@ -411,7 +418,7 @@ h4 {
 /* Section avis */
 .avis {
     background-color: #1f1d21;
-    padding: 35px 0;
+    padding-top: 35px;
     display: flex;
     margin: auto;
     justify-content: space-evenly;
@@ -479,6 +486,7 @@ h4 {
 }
 .article__txt__apercu {
     font-size: 13px;
+    color: #b8b8b8;
 }
 .article img {
     width: 100%;
@@ -496,7 +504,7 @@ h4 {
 /* Section Contact */
 .contact {
     background-color: #19161b;
-    padding: 35px 0;
+    padding: 35px 0 70px 0;
 }
 .contact__container {
     width: 85%;
@@ -526,6 +534,7 @@ h4 {
 .contact__container__txt p {
     font-weight: 200;
     font-size: 12px;
+    color: #b8b8b8;
 }
 .email {
     padding: 0;
@@ -534,4 +543,38 @@ h4 {
 .contact__container__img {
     width: 60%;
     object-fit: cover;
+}
+/* Section Footer */
+footer {
+    background-color: #19161b;
+    padding: 35px 0 0 0;
+}
+.footer__img {
+    margin: auto;
+    width: 85%;
+}
+.footer__img img {
+    width: 100%;
+}
+footer ul {
+    padding: 30px 0 15px 0;
+    font-weight: 200;
+    width: 41%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li a {
+    color: #b8b8b8;
+    font-size: 14px;
+}
+@media only screen and (max-width: 500px) {
+    footer ul {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    footer ul {
+        width: 70%;
+    }
 }
