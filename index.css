@@ -493,3 +493,45 @@ h4 {
         margin-bottom: 35px;
     }
 }
+/* Section Contact */
+.contact {
+    background-color: #19161b;
+    padding: 35px 0;
+}
+.contact__container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 95vh;
+}
+.contact__container__txt {
+    width: 40%;
+    color: white;
+    background-color: #1f1d21;
+    padding: 0 5%;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact__container__txt h2 {
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.contact__container__txt h2:first-child {
+    margin: 0;
+}
+.contact__container__txt p {
+    font-weight: 200;
+    font-size: 12px;
+}
+.email {
+    padding: 0;
+    margin: 0;
+}
+.contact__container__img {
+    width: 60%;
+    object-fit: cover;
+}
